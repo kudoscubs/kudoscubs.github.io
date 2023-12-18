@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KudosCubs - Where Every Cub is a Star!</title>
+  <meta content="Join KudosCubs - a vibrant community celebrating the talents of children from around the world. Participate, vote, and win!" name="description">
+  <meta content="Children Talent Contests, Fun Kid Activities, Family-Friendly Competitions" name="keywords"> 
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+            placement : 'top'
+        });
+    });
+  </script>
+
+  <script id="mcjs">
+    function showPopup() { 
+        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/85db60ecdb00935f65a10ce4c/5207cd3d02a39141fb7d48d87.js");
+    
+    //unsetting the cookie
+        document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";                  
+        document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+        document.getElementById("show-popup").onclick = function() { showPopup(); }
+    </script>
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+<!--   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v2.2.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+       <a href="index.html" class="logo mr-auto"><img src="assets/img/KudosCubs-logo.png" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#portfolio">Submit Video</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <button onclick="showPopup()" target="_blank" href="#" class="get-started-btn scrollto">Subscribe</button>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 d-flex flex-column justify-content-center">
+          <div class="text-center">
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+
+        <div class="d-flex flex-column col-lg-6 justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 order-sm-1">
+          <h1>Showcase Your Child’s Talent</h1>
+          <h2>Upload Their Video to Enter Our Monthly Contest and Compete for Prizes and Recognition</h2>
+          <div class="row">
+            <div class="col-sm-6 offset-sm-3 col-lg-6 offset-lg-0">
+              	<a 	onclick="gtag('event','button_click');" 
+              		class="btn btn-primary btn-lg btn-block"
+              		href="#portfolio">
+              		Submit Video
+          		</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column col-lg-6 order-1 order-lg-2 order-sm-2 hero-img">
+          <img src="assets/img/KudosCubs.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="bidModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">We're Live on Rinkeby Testnet</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-lg">
+            <p>We love your enthusiasm, but we're not quite ready :)</p>
+            <p>In the meantime, you can <a target="_blank" href="http://alpha.KCeals.xyz/Auction2/0x07dF40d653695b2aCC7B2aD126Dc05D4C4698963">play with our Testnet release here</a>.</p>
+            <p>Follow us on Twitter to get the latest alpha. Join our Discord to watch or build the product with us.</p>
+            <div class="social-links mt-3 text-center">
+              <a href="https://twitter.com/video(s)_Deals_xyz" class="twitter"><i class="bx bxl-twitter"></i></a> 
+              <a href="https://discord.gg/uKQgkteu72" class="discord"><i class="bx bxl-discord"></i></a>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Place Bid</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+  <main id="main">
+
+    <!-- ======= How it Works Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>How It Works</h2>
+          <p>Capture your child's best moments and share their talent with the world. Enter our themed contests and stand a chance to win exciting prizes!</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-camera-reels"></i></div>
+              <h4><a href="#">Upload a Video</a></h4>
+              <p>Capture your cub's best moments and share their talent with the world.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-trophy"></i></div>
+              <h4><a href="#">Join a Contest</a></h4>
+              <p>Enter into our themed contests - from singing to storytelling, we celebrate all talents!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-stars"></i></div>
+              <h4><a href="#">Win Prizes & Get Noticed</a></h4>
+              <p>Stand a chance to win exciting prizes and get your star noticed by a global audience.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Kudos Cubs</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              At Kudos Cubs, we believe every child has a unique talent that deserves to shine. Founded by a team of parents and child development experts, we're dedicated to creating a safe, fun, and rewarding platform for children to express their creativity and talents.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Empowerment Through Recognition</li>
+              <li><i class="ri-check-double-line"></i> Community and Support</li>
+              <li><i class="ri-check-double-line"></i> Resources for Growth</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>Experience the joy of seeing your child recognized for their creativity and skills as they earn accolades and build self-esteem through positive community feedback and awards.</p>
+            <p>Join a nurturing community of like-minded parents and experts, all dedicated to encouraging the natural talents of each child in a supportive and collaborative environment.</p>
+            <p>Gain access to valuable resources and expert tips designed to help you guide your child's development in the arts, enhance their presentation skills, and provide them with opportunities for growth and learning.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>This Month’s Contest</h2>
+          <h3>Little Laughs</h3>
+          <p class="explainer-video">
+            A contest for the funniest kiddo! Enter Now by submitting a video.
+          </p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img"><img src="assets/img/laugh1.gif" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="embed-container">
+              <div class="video-responsive">
+                <iframe src="https://driveuploader.com/upload/jhecWn5seJ/embed/" width="600px" height="290px" style="border:0;"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img"><img src="assets/img/laugh3.gif" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-img"><img src="assets/img/laugh4.gif" class="img-fluid" alt=""></div>
+          </div>          
+
+        </div>
+
+        
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-3 text-center text-lg-left">
+            <h3>As Seen On</h3>
+          </div>
+          <div class="pic col-lg-9 text-center">
+            <img src="assets/img/as-featured-on-images-white.webp" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            We welcome your questions via email. In the meantime, here's a selection of common questions. 
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">
+                What kind of videos can my child showcase on KudosCubs?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  KudosCubs welcomes all kinds of talents! From singing, dancing, and playing musical instruments, to painting, storytelling, or even making people laugh. If your child has a unique talent or a charming moment to share, we're here to celebrate it.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">
+                How do I upload a video and enter my child into a contest?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  Uploading a video is easy! Click on the "Submit Video" button and you'll find the 'Upload' option. Just select the contest you'd like to enter, upload the video, and you’re set! Our user-friendly interface makes participation a breeze.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">
+                Is there a fee to participate in the contests?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  No, it's absolutely free to enter our contests. We believe every child deserves a stage, and we wouldn't want entry fees to stand in the way of your child's opportunity to shine.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">
+                How are the winners chosen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  Winners are chosen through a combination of community votes and a panel of impartial judges. This ensures a fair and democratic selection process, where talent truly gets to shine.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">What are the prizes for winning a contest? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  Prizes can range from scholarship funds to support your child's education, vouchers for art supplies or music lessons, to features on our platform and social media channels. Each contest may have different prizes, so be sure to check the details for the contest you're entering!
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="600">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-6" class="collapsed">
+                How do you ensure the safety and privacy of children on the platform? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse" data-parent=".faq-list">
+                <p>
+                  Child safety is our top priority. We comply with all COPPA regulations and have strict privacy policies in place. Videos are screened for safety, and we never share personal information without explicit consent.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="700">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-7" class="collapsed">
+                Can family and friends vote for my child's video?
+              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-7" class="collapse" data-parent=".faq-list">
+                <p>
+                  Absolutely! We encourage you to share your child's talent with your network. Family, friends, and the KudosCubs community can all cast their votes for their favorite young stars.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="800">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-8" class="collapsed">
+                How often can my child participate in contests?
+              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-8" class="collapse" data-parent=".faq-list">
+                <p>
+                  There's no limit to how often your child can participate. We host a variety of contests throughout the year, so there are always new opportunities to join in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="800">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-9" class="collapsed">
+                What if my child doesn't win? Is there any recognition for participating?
+              <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-9" class="collapse" data-parent=".faq-list">
+                <p>
+                  Every child that participates is a star in our eyes. We celebrate all entries by showcasing them on our platform, and often have recognition for runners-up and special categories. The experience itself is rewarding, offering exposure and the chance to be part of a loving community.
+                </p>
+              </div>
+            </li>            
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials from Parents</h2>
+          <p>Hear from our Star Parents and Viewers about their experiences with KudosCubs.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/samantha.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Samantha R.</h4>
+                <span>Chicago, IL</span>
+                <p>"KudosCubs has been an incredible platform for my little Max to show off his piano skills. Not only did he win the 'Mini Maestros' contest, but the positive feedback from the community has boosted his confidence immensely!"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/maya.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Maya P.</h4>
+                <span>Seattle, WA</span>
+                <p>"The 'Little Laughs' contest was a blast! Seeing my son's goofy antics recognized and celebrated by others was pure joy. The website is super user-friendly, and the KudosCubs team really cares about creating a fun, safe space for kids."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/derek.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Derek L.</h4>
+                <span>Austin, TX</span>
+                <p>"As a father of two spirited girls, I've been amazed at how KudosCubs has connected us with other families and showcased my daughters' love for dance. Winning the 'Tiny Dancers' contest was just the cherry on top of a great experience!"</p>                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/team/alex.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Alex T.</h4>
+                <span>Orlando, FL</span>
+                <p>"Our family looks forward to seeing the new talent on KudosCubs every week. My daughter's drawing was featured in the 'Creative Cubs' gallery, and the outpouring of love from the community has inspired her to keep creating. Thank you, KudosCubs, for this wonderful platform!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Stay In Touch</h2>
+          <p>
+            The KudosCubs community is dedicated to connecting families, celebrating children's milestones, and nurturing talent across the globe. Our mission is to build a platform that not only showcases the unique gifts of each child but also fosters an environment where parents can share resources, support each other, and watch their little stars shine. As we grow, we envision KudosCubs becoming a household name synonymous with positive reinforcement and family fun. Come be a part of our journey!
+          </p>
+          <div id="MailingListRow" class="row">
+            <div id="joinMailingList" class="col-sm-6 offset-sm-3 col-lg-6 offset-lg-0">
+              	<button
+                  onclick="showPopup()"
+              		class="btn btn-primary btn-lg btn-block"
+                  href="#MAILCHIMP">
+                  Join Our Mailing List
+                </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <a href="index.html" class="logo"><img src="assets/img/KudosCubs-logo.png" alt="" class="img-fluid  footer-logo"></a>
+            <p>
+              Made with ❤️ <br>
+              in Denver & NYC<br>
+              <strong>Email:</strong> info_at_kudoscubs.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Submit Video</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Learn More</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Testimonials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="tos.html">Terms of Service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Join Our Journey</h4>
+            <p>
+              Subscribe to our mailing list, where we showcase the latest contest winners. Read our blog to learn about the latest features.
+            </p>
+            <div class="social-links mt-3">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Masalsa Inc.</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i>
+  </a>
+
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+</body>
+
+</html>
+
